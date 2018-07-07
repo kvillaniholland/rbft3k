@@ -13,7 +13,11 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', ' Robo-Fighting Theater 3000'),
+
+    'max_daily_attacks' => env('MAX_DAILY_ATTACKS', 5),
+
+    'max_daily_defends' => env('MAX_DAILY_DEFENDS', 1),
 
     /*
     |--------------------------------------------------------------------------

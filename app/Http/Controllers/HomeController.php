@@ -2,27 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Helpers\Statistics;
+use App\Robot;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    private $statistics;
+
+    public function __construct(Statistics $statistics)
     {
-        $this->middleware('auth');
+        $this->statistics = $statistics;
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        return view('home');
+        return view('home', [
+            'recent_fights' => $this->statistics->getRecentFights(),
+            'top_robots' => $this->statistics->getTopRobots()
+        ]);
     }
 }
