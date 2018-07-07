@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\Statistics;
-use App\Robot;
 
 class HomeController extends Controller
 {

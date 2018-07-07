@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Robot;
 use Illuminate\Database\Eloquent\Model;
 
 class Fight extends Model

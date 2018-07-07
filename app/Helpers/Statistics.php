@@ -4,8 +4,6 @@ namespace App\Helpers;
 
 use App\Fight;
 use App\Robot;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Carbon;
 
 class Statistics
 {

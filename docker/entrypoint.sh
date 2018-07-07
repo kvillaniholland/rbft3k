@@ -1,7 +1,8 @@
 #!/bin/bash -e
-. /opt/bitnami/base/functions
 
- # TODO - add credit in readme to bitnami
+# Modified from the original at https://github.com/bitnami/bitnami-docker-laravel
+
+. /opt/bitnami/base/functions
 
 print_welcome_page
 
