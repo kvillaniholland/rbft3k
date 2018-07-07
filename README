@@ -1,3 +1,0 @@
-- Git Clone
-docker-compose up
-wait for Laravel development server started: <http://0.0.0.0:3000>
