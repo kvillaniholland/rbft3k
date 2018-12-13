@@ -30,3 +30,5 @@
  - I've included a `.env` file in this repository for ease of testing - considering there is no sensitive information in it, I think it's okay in this case. Normally, I would include an `env.example` file scrubbed of any sensitive details.
 - There are a few places where static methods are used (particularly the two custom validation `Rules`, that _should_ be using dependency injection for better testability, but I ran out of time before I could come up with a good way to implement it. These would also be at the top of my list for refactoring.
 - Since the app does not collect emails, I've removed all the links to the password reset pages. Since I used the builtin Laravel authentication solution, the controller methods for resetting passwords still exists.
+
+TEST PR
